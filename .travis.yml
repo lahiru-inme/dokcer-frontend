@@ -14,7 +14,7 @@ deploy:
     skip_cleanup: true
     provider: "elasticbeanstalk"
     region: "ap-southeast-1"
-    app: "lahiruinme/docker-frontend"
+    app: "docker-frontend"
     env: "docker-frontend"
     bucket_name: "elasticbeanstalk-ap-southeast-1-483840613156"
     bucket_path: "docker-frontend"
