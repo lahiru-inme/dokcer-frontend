@@ -11,9 +11,10 @@ before_install:
  #   - docker run lahiruinme/docker-frontend npm run test -- --coverage
 
 deploy:
+    skip_cleanup: true
     provider: "elasticbeanstalk"
     region: "ap-southeast-1"
-    app: "docker"
+    app: "lahiruinme/docker-frontend"
     env: "docker-frontend"
     bucket_name: "elasticbeanstalk-ap-southeast-1-483840613156"
     bucket_path: "docker-frontend"
